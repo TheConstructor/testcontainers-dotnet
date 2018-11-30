@@ -25,10 +25,7 @@
         <ProjectReference Include="..\TestContainers\TestContainers.csproj" />
     </ItemGroup>
 
-    <ItemGroup Condition=" '$(TargetFramework)' == 'net45' OR '$(TargetFramework)' == 'net46' ">
-        <PackageReference Include="MySql.Data" Version="6.9.11" />
-    </ItemGroup>
-    <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
-        <PackageReference Include="MySql.Data" Version="6.10.6" />
+    <ItemGroup>
+      <PackageReference Include="MySql.Data" Version="8.0.13" />
     </ItemGroup>
 </Project>
